@@ -1,0 +1,26 @@
+{
+    "files.associations": {
+        "funciones.h": "c",
+        "stdlib.h": "c",
+        "archivos.h": "c",
+        "ipc.h": "c",
+        "stdio.h": "c",
+        "string.h": "c",
+        "typeinfo": "c",
+        "semaforo.h": "c",
+        "array": "c",
+        "string_view": "c",
+        "initializer_list": "c",
+        "utility": "c",
+        "unistd.h": "c",
+        "memoria.h": "c",
+        "time.h": "c",
+        "sem.h": "c",
+        "def.h": "c",
+        "cola.h": "c",
+        "pthread.h": "c",
+        "thread.h": "c",
+        "global.h": "c"
+    },
+    "C_Cpp.default.compilerPath": "/bin/gcc"
+}
