@@ -1,4 +1,4 @@
-#define CLAVE_BASE 33
+#define CLAVE_BASE 116
 #define ROJO 0
 #define VERDE 1
 #define LARGO_CIUDAD 50
@@ -7,23 +7,35 @@
 #define NOMBRE_ARCHIVO "lote.dat"
 #define CANTIDAD 10
 
-typedef struct tipo_dato dato;
-struct tipo_dato
+typedef enum
 {
-    int numero;
-    char letra;
+    NADIE,
+    CONEJO,
+    GATO,
+    PERRO
+} Animal;
+
+typedef struct tipo_jugador Jugador;
+struct tipo_jugador
+{
+    Animal tipo;
+    int turnos;
+    int pasos;
+    int idColaMensajes;
+    int *ganador;
 };
 
-typedef struct tipo_cliente cliente;
-struct tipo_cliente
+typedef struct estado_semaforo semaforo;
+struct estado_semaforo
 {
-    int id;
-    int saldo;
+    int activo;
 };
 
 typedef enum
 {
     MSG_NADIE,
-    MSG_BANCO,
-    MSG_CAJERO
+    MSG_CONEJO,
+    MSG_GATO,
+    MSG_PERRO,
+    MSG_PISTA
 } Destinos;

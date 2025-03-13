@@ -5,10 +5,13 @@ CFLAGS=-Wall -pedantic-errors -std=gnu89 -O3 -pthread
 
 HEADER=-I./
 
-all: clean adivinar
+all: clean jugador tablero
 
-adivinar:
-	$(CC) -o adivinar adivinar.c funciones.c semaforo.c archivos.c clave.c memoria.c cola.c thread.c global.c $(CFLAGS) $(HEADER)
+tablero:
+	$(CC) -o tablero tablero.c funciones.c semaforo.c archivos.c clave.c memoria.c cola.c thread.c global.c $(CFLAGS) $(HEADER)
+
+jugador:
+	$(CC) -o jugador jugador.c funciones.c semaforo.c archivos.c clave.c memoria.c cola.c thread.c global.c $(CFLAGS) $(HEADER)
 
 clean:
-	rm -rf *o adivinar
+	rm -rf *o jugador tablero

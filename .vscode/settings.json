@@ -20,7 +20,8 @@
         "cola.h": "c",
         "pthread.h": "c",
         "thread.h": "c",
-        "global.h": "c"
+        "global.h": "c",
+        "shm.h": "c"
     },
     "C_Cpp.default.compilerPath": "/bin/gcc"
 }
